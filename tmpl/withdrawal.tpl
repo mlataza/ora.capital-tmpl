@@ -90,7 +90,8 @@
                                                     {foreach from=$ps item=p}
                                                         <option value="{$p.id}" data-account="{$p.account|escape:html}"
                                                             data-available="{$p.available|escape:html}"
-                                                            data-pending="{$p.pending|escape:html}">
+                                                            data-pending="{$p.pending|escape:html}"
+                                                            data-name="{$p.name|escape:html}">
                                                             {$p.name|escape:html}
                                                         </option>
                                                     {/foreach}
