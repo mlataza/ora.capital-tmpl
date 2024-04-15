@@ -1,3 +1,3 @@
-document.addEventListener('readystatechange', function() {
+window.addEventListener('load', function() {
     moneyInput('input#amount');
 });
