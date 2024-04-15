@@ -139,22 +139,6 @@
             <a class="header__logo d-flex align-items-center justify-content-lg-start" href="/">
                 <img class="header__logo-svg" src="styles/assets/app/img/18.png" srcset="styles/assets/app/img/18.png 1x, styles/assets/app/img/18@2x.png 2x" alt="">
             </a>
-            <div class="header__lang order-2 order-lg-0">
-                <i class="ico ico-[[ ::global.language.code ]]"></i>
-                <span class="notranslate" ng-switch="::global.language.code === 'zh-CN'">
-                    <span ng-switch-when="true">CN</span>
-                    <span ng-switch-default ng-bind="::global.language.code"></span>
-                </span>
-                <div class="header__lang-hide">
-                    <a class="header__lang-link pointer" ng-repeat="lang in ::global.languages" ng-click="changeLanguage(lang)" title="[[ ::lang.name ]]">
-                        <i class="ico ico-[[ ::lang.code ]]"></i>
-                        <span class="notranslate" ng-switch="::lang.code === 'zh-CN'">
-                            <span ng-switch-when="true">CN</span>
-                            <span ng-switch-default ng-bind="::lang.code"></span>
-                        </span>
-                    </a>
-                </div>
-            </div>
         </div>
         <div class="login__help d-none d-xl-flex flex-column">
             <div class="login__help-item darkSection__stat-item d-flex align-items-center mb-3">
