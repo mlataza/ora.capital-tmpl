@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 40 40" id="ltc">
+			<rect width="40" height="40" rx="8" fill="#4471B8"></rect>
+			<g clip-path="url(#ltc_a)">
+				<path d="M17.16 28.643h13.505l-.763 2.866h-16.47l2.377-8.986L11.2 24.2l.893-3.38 4.612-1.676 2.55-9.634h2.967l-2.233 8.44 4.716-1.715-.893 3.379-4.716 1.715-1.935 7.314z" fill="#fff"></path>
+			</g>
+			<defs>
+				<clipPath id="ltc_a">
+					<path fill="#fff" transform="translate(8 9)" d="M0 0h22v22H0z"></path>
+				</clipPath>
+			</defs>
+		</svg>
