@@ -115,71 +115,271 @@
                         <!-- FATAL ERROR MESSAGE END -->
                     {else}
 
-                        <!-- ERROR MESSAGE START -->
-                        <div class="row animated fadeIn">
-                            <div class="col">
-                                <div class="card dashboard_card">
-                                    <div class="card__box">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="alert alert-danger">
-                                                
-                                                    {if $say eq 'ec_forbidden' || $errors.ec_forbidden}
-                                                        Sorry, withdraw for this processing is temproary forbidden.<br><br>
-                                                    {/if}
-                                                    {if $say eq 'on_hold' || $errors.on_hold}
-                                                        Sorry, this amount on hold now.<br><br>
-                                                    {/if}
-                                                    {if $say eq 'zero' || $errors.zero}
-                                                        Sorry, you can't request a withdraw smaller than
-                                                {$currency_sign}0.00 only
-                                                {/if}
-                                                {if $say eq 'less_min' || $errors.less_min}
-                                                Sorry, you can request not less than
-                                                {$currency_sign}{*$settings.min_withdrawal_amount*}{$fees.amount_min}<br><br>
-                                                {/if}
-                                                {if $say eq 'greater_max' || $errors.greater_max}
-                                                Sorry, you can request not greater than
-                                                {$currency_sign}{*$settings.max_withdrawal_amount*}{$fees.amount_max}<br><br>
-                                                {/if}
-                                                {if $say eq 'daily_limit' || $errors.daily_limit}
-                                                Sorry, you have exceeded a daily limit<br><br>
-                                                {/if}
-                                                {if $say eq 'not_enought' || $errors.not_enought}
-                                                Sorry, you have requested the amount larger than the one on your
-                                                balance.<br><br>
-                                                {/if}
-                                                {if $say eq 'invalid_transaction_code' || $errors.invalid_transaction_code}
-                                                You have entered the invalid transaction code.<br><br>
-                                                {/if}
-                                                {if $say eq 'invalid_tfa_code' || $errors.invalid_tfa_code}
-                                                You have entered invalid 2FA code.<br><br>
-                                                {/if}
-                                                {if $say eq 'no_deposits' || $errors.no_deposits}
-                                                You have not done any deposits yet. Withdrawal function will be
-                                                available after a deposit.
-                                                <br><br>
-                                                {/if}
-                                                {if $say eq 'no_active_deposits' || $errors.no_active_deposits}
-                                                You must have active deposit to withdraw.
-                                                {/if}
-                                                {if $say eq 'no_account' || $errors.no_account}
-                                                        Please, provide your account to withdraw funds to first <a
-                                                            href="{"?a=edit_account"|encurl}">here</a>.
-                                                    {/if}
-                                                    {if $errors.demo}
-                                                        Withdraw is not available for demo account.
-                                                    {/if}
-                                                    {if $errors.turing_image}Invalid turing image{/if}
-                                                    {if $errors.account_suspended}Account is suspended{/if}
+                        <!-- ERROR MESSAGES START -->
 
+                        {if $say eq 'ec_forbidden' || $errors.ec_forbidden}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Sorry, withdraw for this processing is temproary forbidden.<br><br>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        {/if}
+
+                        {if $say eq 'on_hold' || $errors.on_hold}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Sorry, this amount on hold now.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+                        {if $say eq 'zero' || $errors.zero}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Sorry, you can't request a withdraw smaller than
+                                                {$currency_sign}0.00 only
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'less_min' || $errors.less_min}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                Sorry, you can request not less than
+                                                {$currency_sign}{*$settings.min_withdrawal_amount*}{$fees.amount_min}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'greater_max' || $errors.greater_max}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                Sorry, you can request not greater than
+                                                {$currency_sign}{*$settings.max_withdrawal_amount*}{$fees.amount_max}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'daily_limit' || $errors.daily_limit}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                Sorry, you have exceeded a daily limit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'not_enought' || $errors.not_enought}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                Sorry, you have requested the amount larger than the one on your
+                                                balance.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'invalid_transaction_code' || $errors.invalid_transaction_code}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                You have entered the invalid transaction code.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'invalid_tfa_code' || $errors.invalid_tfa_code}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                You have entered invalid 2FA code.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'no_deposits' || $errors.no_deposits}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                You have not done any deposits yet. Withdrawal function will be
+                                                available after a deposit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'no_active_deposits' || $errors.no_active_deposits}
+                    <div class="row animated fadeIn">
+                        <div class="col">
+                            <div class="card dashboard_card">
+                                <div class="card__box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="alert alert-danger">
+                                                You must have active deposit to withdraw.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if $say eq 'no_account' || $errors.no_account}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Please, provide your account to withdraw funds to first <a
+                                                            href="{"?a=edit_account"|encurl}">here</a>.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+                        {if $errors.demo}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Withdraw is not available for demo account.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+                        {if $errors.turing_image}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Invalid turing image
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+                        {if $errors.account_suspended}
+                            <div class="row animated fadeIn">
+                                <div class="col">
+                                    <div class="card dashboard_card">
+                                        <div class="card__box">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="alert alert-danger">
+                                                        Account is suspended
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
+
                         <!-- ERROR MESSAGE END -->
 
                         <!-- ngIf: vm.ready -->
