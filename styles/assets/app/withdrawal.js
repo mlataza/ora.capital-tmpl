@@ -1,0 +1,1 @@
+moneyInput('input#amount');

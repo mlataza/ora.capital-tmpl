@@ -90,8 +90,7 @@
 
                                 <!-- Account is available -->
                                 <div class="mt-3">
-                                    <a href="?a=cust&page=address" class="btn btn-primary w-100">
-                                        Set Account
+                                    <a href="#" class="btn btn-primary w-100">
                                         {foreach from=$ps item=p}
                                             {$p.account|escape:html}
                                         {/foreach}
@@ -122,7 +121,7 @@
                                 <div class="card__box">
                                     <div class="row">
                                         <div class="col-12 col-sm-6 mb-3 mb-sm-0">
-                                            <input id="plan-amount" name="amount" value="0.00" type="text"
+                                            <input id="amount" name="amount" value="0.00" type="text"
                                                 class="form-control form-control_dashboard ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty ng-valid-required ng-valid-maxlength"
                                                 ng-model="vm.data.amount" ng-required="true" sx-amount="vm.sxAmount"
                                                 maxlength="12" placeholder="" required="required">
@@ -287,4 +286,8 @@
 
             </div>
         </div>
+
+        <script src="styles/app/utils.js"></script>
+        <script src="styles/app/withdrawal.js"></script>
+
 {include file="footer.tpl"}
