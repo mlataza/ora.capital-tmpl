@@ -170,19 +170,18 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <!-- TODO: MOVE THIS TO ELSE -->
+                                    {else}
                                         <div class="card dashboard_card">
                                             <div class="card__box">
                                                 <div class="row">
-                                                    <div class="col mb-3">
-                                                        You have no funds to withdraw
+                                                    <div class="col">
+                                                        <div class="alert alert-warning">
+                                                            You have no funds to withdraw.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    {else}
-
                                     {/if}
 
                                 </form>
