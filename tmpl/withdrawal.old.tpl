@@ -1,4 +1,4 @@
-{include file="header.tpl"}
+a{include file="header.tpl"}
 
 <div class="dashboard__box">
     <div class="row flex-nowrap">
