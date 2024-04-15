@@ -68,7 +68,7 @@
                     <!-- ngIf: vm.ready -->
                     <div class="row animated fadeIn ng-scope" ng-if="vm.ready">
                         <div class="col-12 col-xl-6">
-                            <h2 class="dashboard__box-subtitle">Withdrawal stages:</h2>
+                            <h2 class="dashboard__box-subtitle">Withdrawal stages: (UPDATED)</h2>
                             <input type="hidden" name="form_id" value="17131684732134"><input type="hidden"
                                 name="form_token" value="e8249aef921e07da2337d1ab7053df99">
                             <div class="card dashboard_card">

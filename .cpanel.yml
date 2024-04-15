@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=~/public_html/
-    - /bin/cp -R styles $DEPLOYPATH
-    - /bin/cp -R tmpl $DEPLOYPATH
+    - /bin/rsync -r styles $DEPLOYPATH
+    - /bin/rsync -r tmpl $DEPLOYPATH
