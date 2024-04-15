@@ -310,7 +310,7 @@
 
                             <div class="card dashboard_card ">
                                 <div class="card__head d-flex justify-content-between align-items-center">
-                                    <span>Withdrawal statistics</span>
+                                    <span id="name">Tether</span>
                                     <span class="card__head_green">
                                         <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">

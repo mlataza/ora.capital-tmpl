@@ -3,8 +3,11 @@ window.addEventListener('load', function () {
 
     $('select#ec')
         .on('change', function () {
+            // Get option
+            var option = $('option:selected', this);
+
             // Update account
-            var account = $('option:selected', this).attr('data-account');
+            var account = option.attr('data-account');
             if (account) {
                 $('#account').attr('href', '#').text(account);
             } else {
@@ -12,12 +15,16 @@ window.addEventListener('load', function () {
             }
 
             // Update available
-            var available = $('option:selected', this).attr('data-available');
+            var available = option.attr('data-available');
             $('#available').text(printNumber(available * 1) + " USD");
 
             // Update pending
-            var pending = $('option:selected', this).attr('data-pending');
+            var pending = option.attr('data-pending');
             $('#pending').text(printNumber(pending * 1) + " USD");
+
+            // Update name
+            var name = option.attr('data-name');
+            $('#name').text(name);
         })
         .trigger('change');
 });
