@@ -287,7 +287,7 @@
             </div>
         </div>
 
-        <script src="styles/app/utils.js"></script>
-        <script src="styles/app/withdrawal.js"></script>
+        <script src="styles/assets/app/utils.js"></script>
+        <script src="styles/assets/app/withdrawal.js"></script>
 
 {include file="footer.tpl"}

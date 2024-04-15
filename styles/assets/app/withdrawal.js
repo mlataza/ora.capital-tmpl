@@ -1,1 +1,5 @@
-moneyInput('input#amount');
+$(function() {
+
+    moneyInput('input#amount');
+
+});
