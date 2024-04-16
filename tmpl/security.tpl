@@ -318,6 +318,8 @@
                                 HELLO WORLD!
                             </div>
 
+                            <script defer src="styles/assets/app/video.js"></script>
+
                             <style>
                                 .dashboard__box .card {
                                     max-width: 46%;

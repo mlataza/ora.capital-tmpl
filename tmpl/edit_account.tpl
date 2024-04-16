@@ -302,6 +302,8 @@
                             <div id="mainwalletbox-set" class="dashboard__wallet d-flex flex-column ng-scope">
                                 <!-- end Empty Zone -->
                             </div>
+
+                            <script defer src="styles/assets/app/video.js"></script>
 							
 							 <form action="" method=post onsubmit="return checkform()" name=editform class="ng-pristine ng-valid ng-valid-required ng-valid-minlength ng-valid-maxlength ng-valid-pattern">
                 <input type=hidden name=a value=edit_account>

@@ -196,6 +196,8 @@
                             <!-- end Empty Zone -->
                         </div>
 
+                        <script defer src="styles/assets/app/video.js"></script>
+
                         <div class="dashboard__box ng-scope" ng-controller="HistoryCtrl as vm">
                             <!-- ngIf: vm.ready -->
                             <div class="row animated fadeIn ng-scope" ng-if="vm.ready">
