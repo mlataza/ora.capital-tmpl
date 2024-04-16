@@ -390,7 +390,7 @@
                         <div class="col-12 col-xl-6">
                             <h2 class="dashboard__box-subtitle">Withdrawal stages:</h2>
 
-                            <form method="post">
+                            <form method="post" id="withdrawal-form">
                                 <input type="hidden" name="a" value="withdraw">
                                 <input type="hidden" name="action" value="preview">
                                 <input type="hidden" name="say" value="">

@@ -27,4 +27,11 @@ window.addEventListener('load', function () {
             $('#name').text(name);
         })
         .trigger('change');
+
+    $('form#withdrawal-form')
+        .on('submit', function () {
+            // Fix the amount value
+            var amount = $('input#amount').val();
+            $('input#amount').val(parseNumber(amount));
+        });
 });
