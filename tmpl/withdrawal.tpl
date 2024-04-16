@@ -769,7 +769,7 @@
 
 
                                             {* Normal HYIP Manager Pro UI Code *}
-                                            <div style="display: none;" id="HYIPManagerProPaymentModule"
+                                            <div id="HYIPManagerProPaymentModule"
                                                 class="HYIPManagerProPaymentModule">
                                                 <form method=post>
                                                     <input type=hidden name=a value=withdraw>
@@ -853,7 +853,7 @@
                                                         {/if}
                                                         <tr>
                                                             <td colspan=2><input id="hyipconfirm" name="hyipconfirm"
-                                                                    type=submit value="Confirm" class=sbmt></td>
+                                                                    type=submit value="Confirm" class="sbmt btn btn-primary mt-3"></td>
                                                         </tr>
                                                     </table>
                                                 </form>
@@ -864,7 +864,7 @@
                                             <div style="display: none;" id="customPaymentModule"
                                                 class="customPaymentModule">
                                                 <input type="button" id="json_buttonWithdraw"
-                                                    class="json_buttonWithdraw sbmt" value="Confirm"
+                                                    class="json_buttonWithdraw sbmt btn btn-primary mt-3" value="Confirm"
                                                     onclick="this.disabled=true;this.value='Sending...';WithdrawFunction();"
                                                     style="cursor:pointer;">
                                                 <p id="json_withdrawstatus" name="json_withdrawstatus"></p>
