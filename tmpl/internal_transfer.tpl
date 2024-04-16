@@ -257,10 +257,8 @@
                                  <div class="card__box">
                                     <div class="row">
                                        <div class="col">
-                                          <textarea name="comment" class="form-control w-100" placeholder="Your comment">
-                                             {$frm.comment|escape:htmlall}
-                                          </textarea>
-                                          <input type="text" name="account" class="form-control" placeholder="Email" value="{$frm.account|escape:htmlall}" >
+                                          <input type="text" name="account" class="form-control form-control_dashboard ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty ng-valid-required ng-valid-maxlength" 
+                                             placeholder="Email" value="{$frm.account|escape:htmlall}">
                                        </div>
                                     </div>
                                  </div>
