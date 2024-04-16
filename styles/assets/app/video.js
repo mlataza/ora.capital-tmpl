@@ -1,3 +1,8 @@
+var modalContainer = $(`
+<div class="modal vh-100 w-100" style="background: rgba(0, 0, 0, 0.5); display: none;">
+</div>
+`);
+
 $('#video-1').each(function () {
     var video = $(this);
     var parent = $(this).parent();
@@ -6,17 +11,17 @@ $('#video-1').each(function () {
     var cover = $('.video-cover', video)
 
     function showPopup() {
-        video.addClass('modal vh-100');
         container.css('height', '100%');
-        video.appendTo('body');
+        video.appendTo(modalContainer);
         cover.css('display', 'none');
+        modalContainer.show();
     }
 
     function hidePopup() {
-        video.removeClass('modal vh-100');
         container.css('height', '242px');
         video.appendTo(parent);
         cover.css('display', 'block');
+        modalContainer.hide();
     }
 
     $(video).on('click', function() {
