@@ -14,7 +14,10 @@ $('#video-1').each(function () {
         video.appendTo(modalContainer).css({height: '80%', width: '80%'});
         cover.css('display', 'none');
 
-        modalContainer.removeClass('d-none').addClass('d-flex').on('click', hidePopup);
+        modalContainer.removeClass('d-none').addClass('d-flex').on('click', function() {
+            shownPopup = false;
+            hidePopup(); 
+        });
     }
 
     function hidePopup() {
