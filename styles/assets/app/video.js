@@ -1,3 +1,9 @@
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 var modalContainer = $(`
 <div class="modal vh-100 w-100 align-items-center justify-content-center d-none" style="background: rgba(0, 0, 0, 0.5);"></div>
 `).appendTo('body');
@@ -7,7 +13,8 @@ $('#video-1').each(function () {
     var parent = $(this).parent();
     var container = $('.dashboard__wallet-item-head', video);
     var shownPopup = false;
-    var cover = $('.video-cover', video)
+    var cover = $('.video-cover', video);
+    var player = new YT.Player('video-1-player');
 
     function showPopup() {
         container.css('height', '100%');
@@ -26,6 +33,7 @@ $('#video-1').each(function () {
         cover.css('display', 'block');
 
         modalContainer.removeClass('d-flex').addClass('d-none').off('click');
+        player.pauseVideo();
     }
 
     $(video).on('click', function() {
