@@ -219,14 +219,14 @@
                   {else}
 
                      <!-- INTERNAL TRANSFER FORM START -->
-                     <div class="row animated fadeIn ng-scope" ng-if="vm.ready">
-                        <div class="col-12 col-xl-6">
-                           <h2 class="dashboard__box-subtitle">Internal transfer stages:</h2>
+                     <form method="post">
+                        <input type="hidden" name="a" value="internal_transfer">
+                        <input type="hidden" name="action" value="preview">
+                        <input type="hidden" name="say" value="">
 
-                           <form method="post">
-                              <input type="hidden" name="a" value="internal_transfer">
-                              <input type="hidden" name="action" value="preview">
-                              <input type="hidden" name="say" value="">
+                        <div class="row animated fadeIn ng-scope" ng-if="vm.ready">
+                           <div class="col-12 col-xl-6">
+                              <h2 class="dashboard__box-subtitle">Internal transfer stages:</h2>
 
                               <div class="card dashboard_card">
                                  <div class="card__head d-flex justify-content-between align-items-center">
@@ -278,6 +278,123 @@
                                  </div>
                               </div>
 
+                           </div>
+
+                           <div class="col-12 col-xl-6">
+                              <h2 class="dashboard__box-subtitle">Transfer dynamics:</h2>
+
+                              <div class="card dashboard_card">
+                                 <div class="card__head d-flex justify-content-between align-items-center">
+                                    <span>Transfer dynamics</span>
+                                    <span class="card__head_green">
+                                       <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                                d="M17.5 24H2.5C1.121 24 0 22.878 0 21.5V2.5C0 1.122 1.121 0 2.5 0H17.5C18.879 0 20 1.122 20 2.5V21.5C20 22.878 18.879 24 17.5 24ZM2.5 1C1.673 1 1 1.673 1 2.5V21.5C1 22.327 1.673 23 2.5 23H17.5C18.327 23 19 22.327 19 21.5V2.5C19 1.673 18.327 1 17.5 1H2.5Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M15.5 8H4.5C3.673 8 3 7.327 3 6.5V4.5C3 3.673 3.673 3 4.5 3H15.5C16.327 3 17 3.673 17 4.5V6.5C17 7.327 16.327 8 15.5 8ZM4.5 4C4.225 4 4 4.224 4 4.5V6.5C4 6.776 4.225 7 4.5 7H15.5C15.775 7 16 6.776 16 6.5V4.5C16 4.224 15.775 4 15.5 4H4.5Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M6.5 15H3.5C3.224 15 3 14.776 3 14.5V10.5C3 10.224 3.224 10 3.5 10H6.5C6.776 10 7 10.224 7 10.5V14.5C7 14.776 6.776 15 6.5 15ZM4 14H6V11H4V14Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M6.5 21H3.5C3.224 21 3 20.776 3 20.5V16.5C3 16.224 3.224 16 3.5 16H6.5C6.776 16 7 16.224 7 16.5V20.5C7 20.776 6.776 21 6.5 21ZM4 20H6V17H4V20Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M11.5 15H8.5C8.224 15 8 14.776 8 14.5V10.5C8 10.224 8.224 10 8.5 10H11.5C11.776 10 12 10.224 12 10.5V14.5C12 14.776 11.776 15 11.5 15ZM9 14H11V11H9V14Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M11.5 21H8.5C8.224 21 8 20.776 8 20.5V16.5C8 16.224 8.224 16 8.5 16H11.5C11.776 16 12 16.224 12 16.5V20.5C12 20.776 11.776 21 11.5 21ZM9 20H11V17H9V20Z"
+                                                fill="white"></path>
+                                          <path
+                                                d="M16.5 21H13.5C13.224 21 13 20.776 13 20.5V10.5C13 10.224 13.224 10 13.5 10H16.5C16.776 10 17 10.224 17 10.5V20.5C17 20.776 16.776 21 16.5 21ZM14 20H16V11H14V20Z"
+                                                fill="white"></path>
+                                       </svg>
+                                    </span>
+                                 </div>
+
+                                 <div class="dashboard__dynamic">
+                                    <div class="row">
+                                       <div class="col-12 col-sm-6 col-xl-6 col-lg-12">
+                                          <div class="dashboard__dynamic-item d-flex align-items-center">
+                                             <div class="dashboard__dynamic-item-ico me-3">
+                                                <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                   viewBox="0 0 50 50" id="invest">
+                                                   <rect width="50" height="50" rx="8" fill="#41464F"></rect>
+                                                   <g clip-path="url(#invest_a)">
+                                                      <path
+                                                         d="M25.625 33.125H22.5a.625.625 0 0 1 0-1.25h3.125a1.25 1.25 0 0 0 0-2.5h-1.25a2.503 2.503 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5H27.5a.625.625 0 0 1 0 1.25h-3.125a1.25 1.25 0 0 0 0 2.5h1.25c1.379 0 2.5 1.121 2.5 2.5s-1.121 2.5-2.5 2.5z"
+                                                         fill="#fff"></path>
+                                                      <path
+                                                         d="M25 35a.625.625 0 0 1-.625-.625V32.5a.625.625 0 0 1 1.25 0v1.875c0 .345-.28.625-.625.625zM25 25.625a.625.625 0 0 1-.625-.625v-1.875a.625.625 0 0 1 1.25 0V25c0 .345-.28.625-.625.625z"
+                                                         fill="#fff"></path>
+                                                      <path
+                                                         d="M39.375 21.25h-28.75a.625.625 0 0 1-.625-.625V18.75c0-.226.121-.434.318-.545l14.374-8.125a.627.627 0 0 1 .616 0l14.374 8.125a.626.626 0 0 1 .318.545v1.875c0 .345-.28.625-.625.625zM11.25 20h27.5v-.885L25 11.343l-13.75 7.772V20zM39.375 40h-28.75a.625.625 0 0 1-.625-.625v-2.5c0-.345.28-.625.625-.625h28.75c.345 0 .625.28.625.625v2.5c0 .345-.28.625-.625.625zM11.25 38.75h27.5V37.5h-27.5v1.25z"
+                                                         fill="#F8CC3D"></path>
+                                                      <path
+                                                         d="M13.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM16.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM33.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM36.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625z"
+                                                         fill="#F8CC3D"></path>
+                                                   </g>
+                                                   <defs>
+                                                      <clipPath id="invest_a">
+                                                         <path fill="#fff" transform="translate(10 10)"
+                                                            d="M0 0h30v30H0z"></path>
+                                                      </clipPath>
+                                                   </defs>
+                                                </svg>
+                                             </div>
+                                             <div class="dashboard__dynamic-item-info d-flex flex-column">
+                                                <span>Account Balance:</span>
+                                                <span class="upper notranslate ng-binding">
+                                                   {$userinfo.balance_totals.balance|number_format:2}
+                                                   USD
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-12 col-sm-6 col-xl-6 col-lg-12">
+                                          <div class="dashboard__dynamic-item d-flex align-items-center">
+                                             <div class="dashboard__dynamic-item-ico me-3">
+                                                <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                   viewBox="0 0 50 50" id="invest">
+                                                   <rect width="50" height="50" rx="8" fill="#41464F"></rect>
+                                                   <g clip-path="url(#invest_a)">
+                                                      <path
+                                                         d="M25.625 33.125H22.5a.625.625 0 0 1 0-1.25h3.125a1.25 1.25 0 0 0 0-2.5h-1.25a2.503 2.503 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5H27.5a.625.625 0 0 1 0 1.25h-3.125a1.25 1.25 0 0 0 0 2.5h1.25c1.379 0 2.5 1.121 2.5 2.5s-1.121 2.5-2.5 2.5z"
+                                                         fill="#fff"></path>
+                                                      <path
+                                                         d="M25 35a.625.625 0 0 1-.625-.625V32.5a.625.625 0 0 1 1.25 0v1.875c0 .345-.28.625-.625.625zM25 25.625a.625.625 0 0 1-.625-.625v-1.875a.625.625 0 0 1 1.25 0V25c0 .345-.28.625-.625.625z"
+                                                         fill="#fff"></path>
+                                                      <path
+                                                         d="M39.375 21.25h-28.75a.625.625 0 0 1-.625-.625V18.75c0-.226.121-.434.318-.545l14.374-8.125a.627.627 0 0 1 .616 0l14.374 8.125a.626.626 0 0 1 .318.545v1.875c0 .345-.28.625-.625.625zM11.25 20h27.5v-.885L25 11.343l-13.75 7.772V20zM39.375 40h-28.75a.625.625 0 0 1-.625-.625v-2.5c0-.345.28-.625.625-.625h28.75c.345 0 .625.28.625.625v2.5c0 .345-.28.625-.625.625zM11.25 38.75h27.5V37.5h-27.5v1.25z"
+                                                         fill="#F8CC3D"></path>
+                                                      <path
+                                                         d="M13.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM16.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM33.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM36.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625z"
+                                                         fill="#F8CC3D"></path>
+                                                   </g>
+                                                   <defs>
+                                                      <clipPath id="invest_a">
+                                                         <path fill="#fff" transform="translate(10 10)"
+                                                            d="M0 0h30v30H0z"></path>
+                                                      </clipPath>
+                                                   </defs>
+                                                </svg>
+                                             </div>
+                                             <div
+                                                class="dashboard__dynamic-item-info dashboard__dynamic-item-info_green d-flex flex-column">
+                                                <span>Available Balance:</span>
+                                                <span id="available" class="upper notranslate ng-binding">
+                                                   {0.00|number_format:2}
+                                                   USD
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
                               <div class="card dashboard_card">
                                  <div class="card__head d-flex justify-content-between align-items-center">
                                     <span>Enter transfer amount:</span>
@@ -322,127 +439,11 @@
                                  </div>
                               </div>
 
-                           </form>
-
-                        </div>
-
-                        <div class="col-12 col-xl-6">
-                           <h2 class="dashboard__box-subtitle">Transfer dynamics:</h2>
-
-                           <div class="card dashboard_card">
-                              <div class="card__head d-flex justify-content-between align-items-center">
-                                 <span>Transfer dynamics</span>
-                                 <span class="card__head_green">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path
-                                             d="M17.5 24H2.5C1.121 24 0 22.878 0 21.5V2.5C0 1.122 1.121 0 2.5 0H17.5C18.879 0 20 1.122 20 2.5V21.5C20 22.878 18.879 24 17.5 24ZM2.5 1C1.673 1 1 1.673 1 2.5V21.5C1 22.327 1.673 23 2.5 23H17.5C18.327 23 19 22.327 19 21.5V2.5C19 1.673 18.327 1 17.5 1H2.5Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M15.5 8H4.5C3.673 8 3 7.327 3 6.5V4.5C3 3.673 3.673 3 4.5 3H15.5C16.327 3 17 3.673 17 4.5V6.5C17 7.327 16.327 8 15.5 8ZM4.5 4C4.225 4 4 4.224 4 4.5V6.5C4 6.776 4.225 7 4.5 7H15.5C15.775 7 16 6.776 16 6.5V4.5C16 4.224 15.775 4 15.5 4H4.5Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M6.5 15H3.5C3.224 15 3 14.776 3 14.5V10.5C3 10.224 3.224 10 3.5 10H6.5C6.776 10 7 10.224 7 10.5V14.5C7 14.776 6.776 15 6.5 15ZM4 14H6V11H4V14Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M6.5 21H3.5C3.224 21 3 20.776 3 20.5V16.5C3 16.224 3.224 16 3.5 16H6.5C6.776 16 7 16.224 7 16.5V20.5C7 20.776 6.776 21 6.5 21ZM4 20H6V17H4V20Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M11.5 15H8.5C8.224 15 8 14.776 8 14.5V10.5C8 10.224 8.224 10 8.5 10H11.5C11.776 10 12 10.224 12 10.5V14.5C12 14.776 11.776 15 11.5 15ZM9 14H11V11H9V14Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M11.5 21H8.5C8.224 21 8 20.776 8 20.5V16.5C8 16.224 8.224 16 8.5 16H11.5C11.776 16 12 16.224 12 16.5V20.5C12 20.776 11.776 21 11.5 21ZM9 20H11V17H9V20Z"
-                                             fill="white"></path>
-                                       <path
-                                             d="M16.5 21H13.5C13.224 21 13 20.776 13 20.5V10.5C13 10.224 13.224 10 13.5 10H16.5C16.776 10 17 10.224 17 10.5V20.5C17 20.776 16.776 21 16.5 21ZM14 20H16V11H14V20Z"
-                                             fill="white"></path>
-                                    </svg>
-                                 </span>
-                              </div>
-
-                              <div class="dashboard__dynamic">
-                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-xl-6 col-lg-12">
-                                       <div class="dashboard__dynamic-item d-flex align-items-center">
-                                          <div class="dashboard__dynamic-item-ico me-3">
-                                             <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 50 50" id="invest">
-                                                <rect width="50" height="50" rx="8" fill="#41464F"></rect>
-                                                <g clip-path="url(#invest_a)">
-                                                   <path
-                                                      d="M25.625 33.125H22.5a.625.625 0 0 1 0-1.25h3.125a1.25 1.25 0 0 0 0-2.5h-1.25a2.503 2.503 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5H27.5a.625.625 0 0 1 0 1.25h-3.125a1.25 1.25 0 0 0 0 2.5h1.25c1.379 0 2.5 1.121 2.5 2.5s-1.121 2.5-2.5 2.5z"
-                                                      fill="#fff"></path>
-                                                   <path
-                                                      d="M25 35a.625.625 0 0 1-.625-.625V32.5a.625.625 0 0 1 1.25 0v1.875c0 .345-.28.625-.625.625zM25 25.625a.625.625 0 0 1-.625-.625v-1.875a.625.625 0 0 1 1.25 0V25c0 .345-.28.625-.625.625z"
-                                                      fill="#fff"></path>
-                                                   <path
-                                                      d="M39.375 21.25h-28.75a.625.625 0 0 1-.625-.625V18.75c0-.226.121-.434.318-.545l14.374-8.125a.627.627 0 0 1 .616 0l14.374 8.125a.626.626 0 0 1 .318.545v1.875c0 .345-.28.625-.625.625zM11.25 20h27.5v-.885L25 11.343l-13.75 7.772V20zM39.375 40h-28.75a.625.625 0 0 1-.625-.625v-2.5c0-.345.28-.625.625-.625h28.75c.345 0 .625.28.625.625v2.5c0 .345-.28.625-.625.625zM11.25 38.75h27.5V37.5h-27.5v1.25z"
-                                                      fill="#F8CC3D"></path>
-                                                   <path
-                                                      d="M13.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM16.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM33.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM36.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625z"
-                                                      fill="#F8CC3D"></path>
-                                                </g>
-                                                <defs>
-                                                   <clipPath id="invest_a">
-                                                      <path fill="#fff" transform="translate(10 10)"
-                                                         d="M0 0h30v30H0z"></path>
-                                                   </clipPath>
-                                                </defs>
-                                             </svg>
-                                          </div>
-                                          <div class="dashboard__dynamic-item-info d-flex flex-column">
-                                             <span>Account Balance:</span>
-                                             <span class="upper notranslate ng-binding">
-                                                {$userinfo.balance_totals.balance|number_format:2}
-                                                USD
-                                             </span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                    <div class="col-12 col-sm-6 col-xl-6 col-lg-12">
-                                       <div class="dashboard__dynamic-item d-flex align-items-center">
-                                          <div class="dashboard__dynamic-item-ico me-3">
-                                             <svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 50 50" id="invest">
-                                                <rect width="50" height="50" rx="8" fill="#41464F"></rect>
-                                                <g clip-path="url(#invest_a)">
-                                                   <path
-                                                      d="M25.625 33.125H22.5a.625.625 0 0 1 0-1.25h3.125a1.25 1.25 0 0 0 0-2.5h-1.25a2.503 2.503 0 0 1-2.5-2.5c0-1.379 1.121-2.5 2.5-2.5H27.5a.625.625 0 0 1 0 1.25h-3.125a1.25 1.25 0 0 0 0 2.5h1.25c1.379 0 2.5 1.121 2.5 2.5s-1.121 2.5-2.5 2.5z"
-                                                      fill="#fff"></path>
-                                                   <path
-                                                      d="M25 35a.625.625 0 0 1-.625-.625V32.5a.625.625 0 0 1 1.25 0v1.875c0 .345-.28.625-.625.625zM25 25.625a.625.625 0 0 1-.625-.625v-1.875a.625.625 0 0 1 1.25 0V25c0 .345-.28.625-.625.625z"
-                                                      fill="#fff"></path>
-                                                   <path
-                                                      d="M39.375 21.25h-28.75a.625.625 0 0 1-.625-.625V18.75c0-.226.121-.434.318-.545l14.374-8.125a.627.627 0 0 1 .616 0l14.374 8.125a.626.626 0 0 1 .318.545v1.875c0 .345-.28.625-.625.625zM11.25 20h27.5v-.885L25 11.343l-13.75 7.772V20zM39.375 40h-28.75a.625.625 0 0 1-.625-.625v-2.5c0-.345.28-.625.625-.625h28.75c.345 0 .625.28.625.625v2.5c0 .345-.28.625-.625.625zM11.25 38.75h27.5V37.5h-27.5v1.25z"
-                                                      fill="#F8CC3D"></path>
-                                                   <path
-                                                      d="M13.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM16.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM33.125 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625zM36.875 37.5a.625.625 0 0 1-.625-.625v-16.25a.625.625 0 0 1 1.25 0v16.25c0 .345-.28.625-.625.625z"
-                                                      fill="#F8CC3D"></path>
-                                                </g>
-                                                <defs>
-                                                   <clipPath id="invest_a">
-                                                      <path fill="#fff" transform="translate(10 10)"
-                                                         d="M0 0h30v30H0z"></path>
-                                                   </clipPath>
-                                                </defs>
-                                             </svg>
-                                          </div>
-                                          <div
-                                             class="dashboard__dynamic-item-info dashboard__dynamic-item-info_green d-flex flex-column">
-                                             <span>Available Balance:</span>
-                                             <span id="available" class="upper notranslate ng-binding">
-                                                {0.00|number_format:2}
-                                                USD
-                                             </span>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
                            </div>
+
                         </div>
 
-                     </div>
+                     </form>
                      <!-- INTERNAL TRANSFER FORM END -->
 
                   {/if}
