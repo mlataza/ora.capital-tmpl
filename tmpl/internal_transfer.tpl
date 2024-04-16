@@ -25,31 +25,27 @@
                      <!-- ngSwitchWhen: true -->
                      <!-- ngSwitchWhen: false --><span ng-switch-when="false" class="ng-scope">Open</span>
                      <!-- end ngSwitchWhen: -->
-                     <svg width="12px" height="12px">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arr_right_grey">
-                           <path
-                              d="M9.334 5.532 3.994.192A.652.652 0 0 0 3.528 0a.652.652 0 0 0-.464.192l-.393.393a.657.657 0 0 0 0 .928l4.484 4.485-4.49 4.489a.652.652 0 0 0-.19.464c0 .176.067.34.19.464l.394.393a.652.652 0 0 0 .464.192c.176 0 .34-.068.464-.192l5.346-5.345a.653.653 0 0 0 .191-.465.652.652 0 0 0-.191-.466z"
-                              fill="#5C677D"></path>
-                        </svg>
+                     <svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 12" id="arr_right_grey">
+                        <path
+                           d="M9.334 5.532 3.994.192A.652.652 0 0 0 3.528 0a.652.652 0 0 0-.464.192l-.393.393a.657.657 0 0 0 0 .928l4.484 4.485-4.49 4.489a.652.652 0 0 0-.19.464c0 .176.067.34.19.464l.394.393a.652.652 0 0 0 .464.192c.176 0 .34-.068.464-.192l5.346-5.345a.653.653 0 0 0 .191-.465.652.652 0 0 0-.191-.466z"
+                           fill="#5C677D"></path>
                      </svg>
                   </button>
                </div>
                <div class="d-flex flex-column flex-grow-1">
                   <p class="app__box-subtitle vis">
-                     <svg width="12px" height="12px">
-                        <svg id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                           viewBox="0 0 7 8">
-                           <defs>
-                              <linearGradient id="Degradado_sin_nombre_12" y1="4" x2="7" y2="4"
-                                 gradientUnits="userSpaceOnUse">
-                                 <stop offset="0" stop-color="#f2bf19" />
-                                 <stop offset="1" stop-color="#fed85d" />
-                              </linearGradient>
-                           </defs>
-                           <path
-                              d="M.66,1.61,2.84.27A1.71,1.71,0,0,1,3.33,0a.65.65,0,0,1,.34,0,1.71,1.71,0,0,1,.49.25L6.34,1.61a2.07,2.07,0,0,1,.45.33A.94.94,0,0,1,7,2.25a2.13,2.13,0,0,1,0,.58V5.17a2,2,0,0,1,0,.57.76.76,0,0,1-.17.32,2.07,2.07,0,0,1-.45.33L4.16,7.73A1.71,1.71,0,0,1,3.67,8a.65.65,0,0,1-.34,0,1.71,1.71,0,0,1-.49-.25L.66,6.39a2.07,2.07,0,0,1-.45-.33A.94.94,0,0,1,0,5.75a2.13,2.13,0,0,1,0-.58V2.83a2,2,0,0,1,0-.57.76.76,0,0,1,.17-.32A2.07,2.07,0,0,1,.66,1.61Z"
-                              transform="translate(0 0)" style="fill:url(#Degradado_sin_nombre_12)" />
-                        </svg>
+                     <svg width="12px" height="12px" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 7 8">
+                        <defs>
+                           <linearGradient id="Degradado_sin_nombre_12" y1="4" x2="7" y2="4"
+                              gradientUnits="userSpaceOnUse">
+                              <stop offset="0" stop-color="#f2bf19" />
+                              <stop offset="1" stop-color="#fed85d" />
+                           </linearGradient>
+                        </defs>
+                        <path
+                           d="M.66,1.61,2.84.27A1.71,1.71,0,0,1,3.33,0a.65.65,0,0,1,.34,0,1.71,1.71,0,0,1,.49.25L6.34,1.61a2.07,2.07,0,0,1,.45.33A.94.94,0,0,1,7,2.25a2.13,2.13,0,0,1,0,.58V5.17a2,2,0,0,1,0,.57.76.76,0,0,1-.17.32,2.07,2.07,0,0,1-.45.33L4.16,7.73A1.71,1.71,0,0,1,3.67,8a.65.65,0,0,1-.34,0,1.71,1.71,0,0,1-.49-.25L.66,6.39a2.07,2.07,0,0,1-.45-.33A.94.94,0,0,1,0,5.75a2.13,2.13,0,0,1,0-.58V2.83a2,2,0,0,1,0-.57.76.76,0,0,1,.17-.32A2.07,2.07,0,0,1,.66,1.61Z"
+                           transform="translate(0 0)" style="fill:url(#Degradado_sin_nombre_12)" />
                      </svg>
                      <span>Information</span>
                   </p>
@@ -147,73 +143,90 @@
                   {if $preview}
                   
                      <!-- PREVIEW FORM START -->
-                     <form method=post>
-                        <input type=hidden name=a value=internal_transfer>
-                        <input type=hidden name=action value=confirm>
-                        <input type=hidden name=amount value="{$amount}">
-                        <input type=hidden name=account value="{$user.username|escape:html}">
-                        <input type=hidden name=ec value="{$ec}">
-                        <input type=hidden name=comment value="{$comment|escape:html}">
+                     <div class="row animated fadeIn">
+                        <div class="col-6">
+                           <div class="card dashboard_card">
+                              <div class="card__box">
+                                 <div class="row">
+                                    <div class="col">
 
-                        <table cellspacing=0 cellpadding=2 border=0 class="form internal_transfer_confirm">
-                           <tr>
-                              <th>Payment System:</th>
-                              <td>{$currency}</td>
-                           </tr>
-                           <tr>
-                              <th>Recipient:</th>
-                              <td>{$user.username|escape:html}</td>
-                           </tr>
-                           <tr>
-                              <th>Fee:</th>
-                              <td>
-                                 {if $fee > 0}
-                                 {$settings.internal_transfer_fee}% (min.
-                                 {$currency_sign}{$settings.minimum_internal_transfer_fee})
-                                 {else}
-                                 We have no fee for this operation.
-                                 {/if}
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Debit Amount:</th>
-                              <td>{$to_send|fiat:$ec}</td>
-                           </tr>
-                           <tr>
-                              <th>Credit Amount:</th>
-                              <td>{$to_receive|fiat:$ec}</td>
-                           </tr>
-                           {if $comment}
-                           <tr>
-                              <th>With comments:</th>
-                              <td>{$comment|escape:html}</th>
-                           </tr>
-                           {/if}
-                           {if $settings.use_transaction_code && $userinfo.transaction_code}
-                           <tr>
-                              <th>Transaction Code:</th>
-                              <td><input type="password" name="transaction_code" class=inpts size=15></td>
-                           </tr>
-                           {/if}
-                           {include file="captcha.tpl" action="internal_transfer"}
-                           {if $userinfo.tfa_settings.withdraw}
-                           <tr>
-                              <th>2FA Code:</th>
-                              <td><input type="text" name="tfa_code" class=inpts size=15> <input type="hidden" name="tfa_time"
-                                    id="tfa_time">
-                              </td>
-                           </tr>
-                           {literal}
-                           <script language=javascript>
-                              document.getElementById('tfa_time').value = (new Date()).getTime();
-                                 </script>
-                              {/literal}
-                           {/if}
-                           <tr>
-                              <td colspan=2><br><input type=submit value="Confirm" class=sbmt></td>
-                           </tr>
-                        </table>
-                     </form>
+                                       <form method="post">
+                                          <input type="hidden" name="a" value="internal_transfer">
+                                          <input type="hidden" name="action" value="confirm">
+                                          <input type="hidden" name="amount" value="{$amount}">
+                                          <input type="hidden" name="account" value="{$user.username|escape:html}">
+                                          <input type="hidden" name="ec" value="{$ec}">
+                                          <input type="hidden" name=comment value="{$comment|escape:html}">
+
+                                          <table cellspacing=0 cellpadding=2 border=0 class="form internal_transfer_confirm table">
+                                             <tr>
+                                                <th>Payment System:</th>
+                                                <td>{$currency}</td>
+                                             </tr>
+                                             <tr>
+                                                <th>Recipient:</th>
+                                                <td>{$user.username|escape:html}</td>
+                                             </tr>
+                                             <tr>
+                                                <th>Fee:</th>
+                                                <td>
+                                                   {if $fee > 0}
+                                                   {$settings.internal_transfer_fee}% (min.
+                                                   {$currency_sign}{$settings.minimum_internal_transfer_fee})
+                                                   {else}
+                                                   We have no fee for this operation.
+                                                   {/if}
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <th>Debit Amount:</th>
+                                                <td>{$to_send|fiat:$ec}</td>
+                                             </tr>
+                                             <tr>
+                                                <th>Credit Amount:</th>
+                                                <td>{$to_receive|fiat:$ec}</td>
+                                             </tr>
+                                             {if $comment}
+                                             <tr>
+                                                <th>With comments:</th>
+                                                <td>{$comment|escape:html}</th>
+                                             </tr>
+                                             {/if}
+                                             {if $settings.use_transaction_code && $userinfo.transaction_code}
+                                             <tr>
+                                                <th>Transaction Code:</th>
+                                                <td><input type="password" name="transaction_code" class=inpts size=15></td>
+                                             </tr>
+                                             {/if}
+                                             {include file="captcha.tpl" action="internal_transfer"}
+                                             {if $userinfo.tfa_settings.withdraw}
+                                             <tr>
+                                                <th>2FA Code:</th>
+                                                <td>
+                                                   <input type="text" name="tfa_code" class="inpts" size="15">
+                                                   <input type="hidden" name="tfa_time" id="tfa_time">
+                                                </td>
+                                             </tr>
+                                                
+                                             {/if}
+                                             <tr>
+                                                <td colspan=2><br><input type=submit value="Confirm" class="sbmt btn btn-primary"></td>
+                                             </tr>
+                                          </table>
+                                       </form>
+
+                                       {literal}
+                                          <script>
+                                          document.getElementById('tfa_time').value = (new Date()).getTime();
+                                          </script>
+                                       {/literal}
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                      <!-- PREVIEW FORM END -->
 
                   {else}
@@ -258,7 +271,7 @@
                                     <div class="row">
                                        <div class="col">
                                           <input type="text" name="account" class="form-control form-control_dashboard ng-pristine ng-untouched ng-valid ng-isolate-scope ng-not-empty ng-valid-required ng-valid-maxlength" 
-                                             placeholder="Email" value="{$frm.account|escape:htmlall}">
+                                             placeholder="Username" value="{$frm.account|escape:htmlall}">
                                        </div>
                                     </div>
                                  </div>
