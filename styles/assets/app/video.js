@@ -1,5 +1,5 @@
 var modalContainer = $(`
-<div class="modal vh-100 w-100" style="background: rgba(0, 0, 0, 0.5); display: none;">
+<div class="modal vh-100 w-100 align-items-center justify-content-center d-none" style="background: rgba(0, 0, 0, 0.5);">
 </div>
 `).appendTo('body');
 
@@ -12,16 +12,18 @@ $('#video-1').each(function () {
 
     function showPopup() {
         container.css('height', '100%');
-        video.appendTo(modalContainer);
+        video.appendTo(modalContainer).css({height: '80%', width: '80%'});
         cover.css('display', 'none');
-        modalContainer.show();
+
+        modalContainer.removeClass('d-none').addClass('d-flex');
     }
 
     function hidePopup() {
         container.css('height', '242px');
-        video.appendTo(parent);
+        video.appendTo(parent).css({height: '100%', width: '100%'});
         cover.css('display', 'block');
-        modalContainer.hide();
+
+        modalContainer.removeClass('d-flex').addClass('d-none');
     }
 
     $(video).on('click', function() {
