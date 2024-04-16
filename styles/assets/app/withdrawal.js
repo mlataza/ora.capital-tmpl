@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
             $('input#amount').val(parseNumber(amount));
         });
 
-    this.setTimeout(function () {
+    this.setInterval(function () {
         var statusEl = $('#PageStatus');
         var status = statusEl.text();
         if (status) {

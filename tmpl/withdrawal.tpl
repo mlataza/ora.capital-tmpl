@@ -852,8 +852,12 @@
                                                         {/literal}
                                                         {/if}
                                                         <tr>
-                                                            <td colspan=2><input id="hyipconfirm" name="hyipconfirm"
-                                                                    type=submit value="Confirm" class="sbmt btn btn-primary mt-3"></td>
+                                                            <td colspan=2>
+                                                                <!--
+                                                                <input id="hyipconfirm" name="hyipconfirm"
+                                                                    type=submit value="Confirm" class="sbmt btn btn-primary mt-3">
+                                                                    -->
+                                                            </td>
                                                         </tr>
                                                     </table>
                                                 </form>
