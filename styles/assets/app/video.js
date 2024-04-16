@@ -6,6 +6,7 @@ $('#video-1').each(function () {
     function showPopup() {
         video.addClass('modal vh-100');
         container.css('height', '100%');
+        video.appendTo('body');
     }
 
     function hidePopup() {
