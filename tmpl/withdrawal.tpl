@@ -756,7 +756,7 @@
                     {if $preview}
 
                     <div class="row animated fadeIn">
-                        <div class="col">
+                        <div class="col-6">
                             <div class="card dashboard_card">
                                 <div class="card__box">
                                     <div class="row">
@@ -781,7 +781,7 @@
 
 
                                                     <table cellspacing=0 cellpadding=2 border=0
-                                                        class="form deposit_confirm">
+                                                        class="form deposit_confirm table">
                                                         <tr>
                                                             <th>Payment System:</th>
                                                             <td>{$currency}</td>
