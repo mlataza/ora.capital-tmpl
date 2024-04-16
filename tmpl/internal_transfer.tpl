@@ -249,6 +249,39 @@
                                  </div>
                               </div>
 
+                              <div class="card dashboard_card">
+                                 <div class="card__head d-flex justify-content-between align-items-center">
+                                    <span>To account:</span>
+                                    <span class="card__head_success">2</span>
+                                 </div>
+                                 <div class="card__box">
+                                    <div class="row">
+                                       <div class="col">
+                                          <textarea name="comment" class="form-control w-100" placeholder="Your comment">
+                                             {$frm.comment|escape:htmlall}
+                                          </textarea>
+                                          <input type="text" name="account" class="form-control" placeholder="Email" value="{$frm.account|escape:htmlall}" >
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
+                              <div class="card dashboard_card">
+                                 <div class="card__head d-flex justify-content-between align-items-center">
+                                    <span>Enter comment:</span>
+                                    <span class="card__head_success">3</span>
+                                 </div>
+                                 <div class="card__box">
+                                    <div class="row">
+                                       <div class="col">
+                                          <textarea name="comment" class="form-control w-100" placeholder="Your comment">
+                                             {$frm.comment|escape:htmlall}
+                                          </textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+
                               <table cellspacing="0" cellpadding="2" border="0">
                                  <tr>
                                     <td>Account Balance:</td>
