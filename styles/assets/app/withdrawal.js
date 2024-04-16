@@ -34,4 +34,14 @@ window.addEventListener('load', function () {
             var amount = $('input#amount').val();
             $('input#amount').val(parseNumber(amount));
         });
+
+    this.setTimeout(function () {
+        var statusEl = $('#PageStatus');
+        var status = statusEl.text();
+        if (status) {
+            statusEl.addClass('alert alert-danger');
+        } else {
+            statusEl.removeClass('alert alert-danger');
+        }
+    }, 100);
 });
