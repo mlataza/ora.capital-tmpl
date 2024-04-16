@@ -23,7 +23,7 @@ $('#video-1').each(function () {
         video.appendTo(modalContainer).css({height: '80%', width: '80%'});
         cover.css('display', 'none');
 
-        modalContainer.removeClass('d-none').addClass('d-flex');
+        modal.removeClass('d-none').addClass('d-flex');
     }
 
     function hidePopup() {
@@ -31,7 +31,7 @@ $('#video-1').each(function () {
         video.appendTo(parent).css({height: 'auto', width: '100%'});
         cover.css('display', 'block');
 
-        modalContainer.removeClass('d-flex').addClass('d-none');
+        modal.removeClass('d-flex').addClass('d-none');
     }
 
     $(video).on('click', function() {
