@@ -1,15 +1,6 @@
-var modal = $(`
-<div class="modal vh-100 w-100 align-items-center justify-content-center d-none" style="background: rgba(0, 0, 0, 0.5);">
-    <div class="modal-container"></div>
-    <button class="modal-close position-absolute" style="left: 90%; top: 10%;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
-        </svg>
-    </button>
-</div>
+var modalContainer = $(`
+<div class="modal vh-100 w-100 align-items-center justify-content-center d-none" style="background: rgba(0, 0, 0, 0.5);"></div>
 `).appendTo('body');
-var modalContainer = $('.modal-container', modal);
-var modalClose = $('.modal-close', modal);
 
 $('#video-1').each(function () {
     var video = $(this);
@@ -23,7 +14,7 @@ $('#video-1').each(function () {
         video.appendTo(modalContainer).css({height: '80%', width: '80%'});
         cover.css('display', 'none');
 
-        modal.removeClass('d-none').addClass('d-flex');
+        modalContainer.removeClass('d-none').addClass('d-flex').on('click', hidePopup);
     }
 
     function hidePopup() {
@@ -31,7 +22,7 @@ $('#video-1').each(function () {
         video.appendTo(parent).css({height: 'auto', width: '100%'});
         cover.css('display', 'block');
 
-        modal.removeClass('d-flex').addClass('d-none');
+        modalContainer.removeClass('d-flex').addClass('d-none').off('click');
     }
 
     $(video).on('click', function() {
