@@ -1,7 +1,7 @@
 var modalContainer = $(`
 <div class="modal vh-100 w-100" style="background: rgba(0, 0, 0, 0.5); display: none;">
 </div>
-`);
+`).appendTo('body');
 
 $('#video-1').each(function () {
     var video = $(this);
