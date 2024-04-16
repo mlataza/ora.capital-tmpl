@@ -199,6 +199,8 @@
                             <!-- end Empty Zone -->
                         </div>
 
+                        <script defer src="styles/assets/app/video.js"></script>
+
                         <div class="dashboard__box ng-scope" ng-controller="DepositsCtrl as vm">
                             <!-- ngIf: vm.ready -->
                             
