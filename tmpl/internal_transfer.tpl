@@ -457,5 +457,6 @@
       </div>
 
       <script src="styles/assets/app/utils.js"></script>
+      <script src="styles/assets/app/internal_transfer.js"></script>
 
 {include file="footer.tpl"}
