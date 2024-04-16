@@ -8,15 +8,14 @@ var modalContainer = $(`
 <div class="modal vh-100 w-100 align-items-center justify-content-center d-none" style="background: rgba(0, 0, 0, 0.5);"></div>
 `).appendTo('body');
 
-function onYouTubeIframeAPIReady() {
-
-    $('#video-1').each(function () {
+function setupPopupVideo(id) {
+    $(`#${id}`).each(function () {
         var video = $(this);
         var parent = $(this).parent();
         var container = $('.dashboard__wallet-item-head', video);
         var shownPopup = false;
         var cover = $('.video-cover', video);
-        var player = new YT.Player('video-1-player');
+        var player = new YT.Player(`${id}-player`);
 
         function showPopup() {
             container.css('height', '100%');
@@ -48,5 +47,11 @@ function onYouTubeIframeAPIReady() {
             }
         });
     });
+}
+
+function onYouTubeIframeAPIReady() {
+
+    setupPopupVideo('video-1');
+    setupPopupVideo('video-2');
 
 };
