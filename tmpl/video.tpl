@@ -20,4 +20,4 @@
 
 </div>
 
-<script defer src="styles/assets/app/video.js"></script>
+<script src="styles/assets/app/video.js"></script>
