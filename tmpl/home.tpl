@@ -1266,7 +1266,7 @@
                                 </svg>
                             </div>
                             <div class="start__list-item-title">Profit withdrawal</div>
-                            <div class="start__list-item-text">Means withdrawal is executed instantly</div>
+                            <div class="start__list-item-text">Request Withdrawal is executed instantly</div>
                             {if $userinfo.logged != 1}
                             <a class="btn btn-primary btn_ico" href="?a=login">
                                 <svg>
