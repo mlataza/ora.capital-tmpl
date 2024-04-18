@@ -303,7 +303,7 @@
                                             <table class="table table-striped table_long">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col" style="width: 321px;">Operation type</th>
+                                                        <th scope="col" style="width: 321px;">Description</th>
                                                         <th scope="col">Date</th>
                                                         <th scope="col">Amount</th>
                                                         <th scope="col" style="width: 190px;">System/Balance</th>
