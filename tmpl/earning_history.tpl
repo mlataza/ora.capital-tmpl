@@ -331,7 +331,7 @@
                                                                 <!-- ngSwitchWhen: false -->
                                                             </svg>
                                                             {/if}
-                                                            <span ng-bind-html="::history.descr" class="ng-binding">{$t.transtype}{$t|@var_dump}</span>
+                                                            <span ng-bind-html="::history.descr" class="ng-binding">{$t.description}</span>
                                                         </td>
                                                         <td class="fw-normal nowrap ng-binding" data-title="Date">{$t.d}</td>
                                                         <td class="fw-bold nowrap notranslate upper" data-title="Amount">
