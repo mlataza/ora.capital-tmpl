@@ -16508,17 +16508,18 @@ body {
     position: relative;
 }
 .deposits__item-progress:after {
-    content: "";
+    content: attr(data-count);
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: calc(100% - 20px);
-    background: #eff0f2;
+    width: 100%;
     border-radius: 4px;
     height: 25px;
     margin: auto;
+    z-index: 1;
+    text-align: center;
 }
 .deposits__item-progress-line {
     background: linear-gradient(274.92deg, #ffdc67 1.33%, #f0b90b 98.67%);
@@ -16529,7 +16530,6 @@ body {
     position: relative;
 }
 .deposits__item-progress-line:after {
-    content: attr(data-count);
     position: absolute;
     top: 0;
     left: 50%;

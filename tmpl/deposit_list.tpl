@@ -338,7 +338,7 @@
                                                             </div>
                                                             <!-- ngIf: ::deposit.plan.id <= 4 -->
                                                             <div class="col-12 ng-scope">
-                                                                <div class="deposits__item-progress">
+                                                                <div class="deposits__item-progress" data-count="{$d.duration_progress|number_format:0:".":","}%">
                                                                     <span class="deposits__item-progress-line" data-count="{$d.duration_progress|number_format:0:".":","}%" style="width: {$d.duration_progress|number_format:0:".":","}%;"></span>
                                                                 </div>
                                                             </div><!-- end ngIf: ::deposit.plan.id <= 4 -->
