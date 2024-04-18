@@ -15671,9 +15671,6 @@ textarea.form-control {
     overflow: hidden;
     position: relative;
 }
-.header__home-box-partners {
-    max-width: 498px;
-}
 @media (max-width: 1400px) {
     .header__home-box-partners {
         max-width: 100%;
