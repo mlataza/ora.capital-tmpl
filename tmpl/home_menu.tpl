@@ -15,7 +15,7 @@
                                     </svg>
                                 </a>
                                 <ul>
-                                    <li>
+                                    <!--li>
                                         <a class="d-flex align-items-start" href="?a=paidout">
                                             <svg width="7px" height="8px">
                                                 <use xlink:href="#circle"></use>
@@ -25,7 +25,7 @@
                                                 <p>Open platform statistics</p>
                                             </div>
                                         </a>
-                                    </li>
+                                    </li-->
                                     <li>
                                         <a class="d-flex align-items-start" href="?a=cust&page=reviews">
                                             <svg width="7px" height="8px">

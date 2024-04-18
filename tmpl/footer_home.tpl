@@ -179,7 +179,7 @@
                                     <span>Information</span>
                                 </h5>
                                 <div class="footer-menu">
-                                    <a class="footer__middle-right-col-link {if $frm.a == 'paidout'}active{/if}" href="?a=paidout">Statistics</a>
+                                    <!--a class="footer__middle-right-col-link {if $frm.a == 'paidout'}active{/if}" href="?a=paidout">Statistics</a-->
                                     <a class="footer__middle-right-col-link {if $frm.page == 'instructions'}active{/if}" href="?a=cust&amp;page=instructions">Instructions</a>
                                     <a class="footer__middle-right-col-link {if $frm.a == 'faq'}active{/if}" href="?a=faq">F.A.Q</a>
                                     <a class="footer__middle-right-col-link {if $frm.page == 'reviews'}active{/if}" href="?a=cust&page=reviews">Feedback</a>

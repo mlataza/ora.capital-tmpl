@@ -544,12 +544,14 @@
                             <p class="mb-0 mt-2 mt-sm-0 mx-auto ms-sm-2">Learn more about project statistics</p>
                         </div>
                         <div class="app__box-information-btn">
+                            <!--
                             <a class="btn btn-secondary btn_ico btn_ico_small" href="?a=paidout">
                                 <svg>
                                     <use xlink:href="#arr_right_transparent_white"></use>
                                 </svg>
                                 <span>Follow statistics</span>
                             </a>
+                            -->
                         </div>
                     </div>
                 </div>

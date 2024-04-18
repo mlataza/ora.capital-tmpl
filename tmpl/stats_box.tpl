@@ -13,9 +13,11 @@
 </tr>
 {/if}
 {if $settings.show_paidout_stats == 1}
+<!--
 <tr>
 	<td class=menutxt><a href="{"?a=paidout"|encurl}" class=menutxt>Paid Out</a></td>
 </tr>
+-->
 {/if}
 {if $settings.show_top10_stats == 1}
 <tr>
