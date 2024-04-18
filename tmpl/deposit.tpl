@@ -501,7 +501,7 @@
                                                 </label>
                                                 <label>
                                                     <input id="spend_account" type="radio" name="type" value="" ng-model="vm.group" ng-value="2" class="ng-pristine ng-untouched ng-valid ng-not-empty">
-                                                    <div id="change_account" class="change-nft__item">From Account<span>new</span>
+                                                    <div id="change_account" class="change-nft__item">From Wallet Bal.<span>new</span>
                                                     </div>
                                                 </label>
                                             </div>
