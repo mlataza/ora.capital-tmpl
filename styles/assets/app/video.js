@@ -53,5 +53,7 @@ function onYouTubeIframeAPIReady() {
 
     setupPopupVideo('video-1');
     setupPopupVideo('video-2');
+    setupPopupVideo('video-3');
+    setupPopupVideo('video-4');
 
 };
