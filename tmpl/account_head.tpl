@@ -36,7 +36,7 @@
     <meta name="google" content="notranslate">
     {include file="social_preview.tpl"}
 	<title>
-	{if $frm.a == 'account'}Control panel
+	{if $frm.a == 'account'}Account Overview
 	{elseif $frm.a == 'deposit_list'}Shares Equity		
 	{elseif $frm.a == 'deposit'}Open deposit
 	{elseif $frm.a == 'withdraw'}Request Withdrawal
@@ -46,15 +46,15 @@
     {elseif $frm.a == 'referallinks'}Promotion banners
 	{elseif $frm.a == 'edit_account'}Account settings
     {elseif $frm.a == 'security'}Security Settings
-	{else}Control panel
+	{else}Account Overview
 	{/if} - {$settings.site_name}	
 	</title>
-    <meta name="title" content="Control panel - {$settings.site_name}">
+    <meta name="title" content="Account Overview - {$settings.site_name}">
     <meta name="description" content="">
     <!-- //base -->
     <!-- opengraph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Control panel - {$settings.site_name}">
+    <meta property="og:title" content="Account Overview - {$settings.site_name}">
     <meta property="og:description" content="">
     <meta property="og:site_name" content="{$settings.site_name}">
     <meta property="og:image:width" content="1200">

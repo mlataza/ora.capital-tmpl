@@ -30,7 +30,7 @@
                                 </g>
 
                             </svg>
-                        </svg> <span>Control panel</span>
+                        </svg> <span>Account Overview</span>
                     </a>
                     <a class="menu__box-el d-flex align-items-center" href="?a=deposit_list">
                         <svg width="20px" height="20px">
@@ -189,7 +189,7 @@
                                     </svg> <span>Information</span>
                                 </p>
                                 <div class="app__box-title-wrap">
-                                    <h2 class="app__box-title vis mb-0">Control panel</h2>
+                                    <h2 class="app__box-title vis mb-0">Account Overview</h2>
                                     {include file="account_coin.tpl"}
                                 </div>
                             </div>
