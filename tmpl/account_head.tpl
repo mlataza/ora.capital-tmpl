@@ -41,7 +41,7 @@
 	{elseif $frm.a == 'deposit'}Open deposit
 	{elseif $frm.a == 'withdraw'}Means withdrawal
     {elseif $frm.a == 'deposit_history'}Operations history
-    {elseif $frm.page == 'address'}Address book
+    {elseif $frm.page == 'address'}Wallet Addresses
     {elseif $frm.a == 'referals'}Partners and links
     {elseif $frm.a == 'referallinks'}Promotion banners
 	{elseif $frm.a == 'edit_account'}Account settings

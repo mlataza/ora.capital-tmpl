@@ -94,7 +94,7 @@
                                 </g>
 
                             </svg>
-                        </svg> <span>Address book</span>
+                        </svg> <span>Wallet Addresses</span>
                     </a>
                     <a class="menu__box-el d-flex align-items-center active" href="?a=referals">
                         <svg width="20px" height="20px">

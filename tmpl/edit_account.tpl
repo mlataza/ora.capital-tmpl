@@ -194,7 +194,7 @@
                                 </g>
 
                             </svg>
-                        </svg> <span>Address book</span>
+                        </svg> <span>Wallet Addresses</span>
                     </a>
                     <a class="menu__box-el d-flex align-items-center" href="?a=referals">
                         <svg width="20px" height="20px">
@@ -600,7 +600,7 @@
                     <!-- ngIf: alc.bsideState -->
                 </div>
                 <!-- </form> -->
-                <!-- start address book -->
+                <!-- start Wallet Addresses -->
                 <div id="address_book" class="dashboard__box ng-scope adressnf">
                     <!-- ngIf: vm.ready -->
                     <div class="row animated fadeIn ng-scope">
