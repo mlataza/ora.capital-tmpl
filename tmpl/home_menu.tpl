@@ -8,9 +8,6 @@
                             <li {if $frm.page == 'partners'}class="active"{/if}>
                                 <a href="?a=cust&amp;page=partners">Partners</a>
                             </li>
-                            <li {if $frm.page == 'instructions'}class="active"{/if}>
-                                <a href="?a=cust&amp;page=instructions">Instructions</a>
-                            </li>
                             <li {if $frm.a == 'faq'}class="active"{/if}>
                                 <a href="?a=faq">F.A.Q</a>
                             </li>
