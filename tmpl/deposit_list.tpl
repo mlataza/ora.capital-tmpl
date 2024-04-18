@@ -323,7 +323,7 @@
                                                             </div>
                                                             <div class="col-12 col-sm-4">
                                                                 <div class="dashboard__data-item dashboard__data-item_light d-flex flex-column justify-content-center mt-0">
-                                                                    <span class="dashboard__data-item-label">Charged:</span>
+                                                                    <span class="dashboard__data-item-label">Earnings:</span>
                                                                     <span class="dashboard__data-item-money upper notranslate ng-binding">
                                                                         {$d.total_profit} usd
                                                                     </span>
