@@ -37,7 +37,7 @@
     {include file="social_preview.tpl"}
 	<title>
 	{if $frm.a == 'account'}Control panel
-	{elseif $frm.a == 'deposit_list'}Investments records		
+	{elseif $frm.a == 'deposit_list'}Shares Equity		
 	{elseif $frm.a == 'deposit'}Open deposit
 	{elseif $frm.a == 'withdraw'}Request Withdrawal
     {elseif $frm.a == 'deposit_history'}Transaction History
