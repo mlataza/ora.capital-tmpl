@@ -417,7 +417,7 @@
                     </div>
                     {/if}
                     {/if}
-                    <div class="header__home-box-partners">
+                    <div class="header__home-box-partners w-100">
                         <h4 class="header__home-box-partners-title">Our partners:</h4>
                         <div class="header__home-box-partners-box wow animate__fadeInUp" data-wow-offset="20" data-wow-duration="1s">
                             <a class="header__home-box-partners-item soon">

@@ -15692,7 +15692,6 @@ textarea.form-control {
     }
 }
 .header__home-box-partners-box {
-    max-width: 410px;
     position: relative;
     display: flex;
     flex-direction: row;
