@@ -45,7 +45,7 @@
     {elseif $frm.a == 'referals'}Referral Program
     {elseif $frm.a == 'referallinks'}Promotion banners
 	{elseif $frm.a == 'edit_account'}Account settings
-    {elseif $frm.a == 'security'}Security
+    {elseif $frm.a == 'security'}Security Settings
 	{else}Control panel
 	{/if} - {$settings.site_name}	
 	</title>
