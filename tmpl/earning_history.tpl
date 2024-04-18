@@ -85,7 +85,7 @@
                                 <path d="M10 20C4.486 20 0 15.514 0 10S4.486 0 10 0s10 4.486 10 10-4.486 10-10 10zm0-18.75c-4.825 0-8.75 3.925-8.75 8.75s3.925 8.75 8.75 8.75 8.75-3.925 8.75-8.75S14.825 1.25 10 1.25z" fill="#F8CC3D"></path>
                                 <path d="M14.375 15.417a.62.62 0 0 1-.442-.184l-4.375-4.375a.625.625 0 0 1-.183-.441V4.583a.625.625 0 0 1 1.25 0v5.574l4.192 4.192a.625.625 0 0 1-.442 1.068z" fill="#F8CC3D"></path>
                             </svg>
-                        </svg> <span>Operations history</span>
+                        </svg> <span>Transaction History</span>
                     </a>
                 </div>
                 <h2 class="menu__title">Management</h2>
@@ -186,7 +186,7 @@
                                     </svg> <span>Information</span>
                                 </p>                                
 								<div class="app__box-title-wrap">
-                                    <h2 class="app__box-title vis mb-0">Operations history</h2>
+                                    <h2 class="app__box-title vis mb-0">Transaction History</h2>
                                     {include file="account_coin.tpl"}
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
                             <!-- ngIf: vm.ready -->
                             <div class="row animated fadeIn ng-scope" ng-if="vm.ready">
                                 <div class="col-12">
-                                    <h2 class="dashboard__box-subtitle">Operations history:</h2>
+                                    <h2 class="dashboard__box-subtitle">Transaction History:</h2>
                                     <!-- empty -->
                                     <!-- ngIf: ::!vm.history.length -->
                                     <!-- //empty -->

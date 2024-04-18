@@ -40,7 +40,7 @@
 	{elseif $frm.a == 'deposit_list'}Investments records		
 	{elseif $frm.a == 'deposit'}Open deposit
 	{elseif $frm.a == 'withdraw'}Request Withdrawal
-    {elseif $frm.a == 'deposit_history'}Operations history
+    {elseif $frm.a == 'deposit_history'}Transaction History
     {elseif $frm.page == 'address'}Wallet Addresses
     {elseif $frm.a == 'referals'}Referral Program
     {elseif $frm.a == 'referallinks'}Promotion banners
