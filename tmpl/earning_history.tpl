@@ -140,7 +140,7 @@
                                 </g>
 
                             </svg>
-                        </svg> <span>Exit from account</span>
+                        </svg> <span>Logout</span>
                     </a>
                 </div>
             </div>
